@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\SaleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,11 @@ Route::get('/', function () {
 
 // Product management
 Route::resource('products', ProductController::class);
+
+// Sales route
+Route::get('/sales', [SaleController::class, 'index'])->name('sales.index');
+Route::get('/sales/create', [SaleController::class, 'create'])->name('sales.create');
+Route::post('/sales', [SaleController::class, 'store'])->name('sales.store');
+
+// Financial reports
+Route::get('/report', [ReportController::class, 'index'])->name('report.index');
