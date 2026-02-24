@@ -2,6 +2,12 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
+    "authors": [
+        {
+            "name": "Avilash Saha",
+            "email": "sahaavilash5055@gmail.com"
+        }
+    ],
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
