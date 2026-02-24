@@ -21,7 +21,7 @@
 
     <!-- Quick Links -->
     <section class="container mx-auto px-4 pb-16">
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
             <a href="{{ route('products.index') }}"
                 class="rounded-lg bg-white p-6 shadow-sm hover:shadow-md transition">
@@ -36,6 +36,14 @@
                 <h2 class="mb-2 text-lg font-semibold text-gray-800">Sales</h2>
                 <p class="text-sm text-gray-600">
                     Record customer sales with discounts, VAT, and payments.
+                </p>
+            </a>
+
+            <a href="{{ route('expenses.create') }}"
+                class="rounded-lg bg-white p-6 shadow-sm hover:shadow-md transition">
+                <h2 class="mb-2 text-lg font-semibold text-gray-800">Expenses</h2>
+                <p class="text-sm text-gray-600">
+                    Track business expenses and keep your accounts balanced.
                 </p>
             </a>
 

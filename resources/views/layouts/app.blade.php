@@ -19,6 +19,7 @@
             <div class="space-x-4">
                 <a href="{{ route('products.index') }}" class="text-white hover:text-gray-200">Products</a>
                 <a href="{{ route('sales.create') }}" class="text-white hover:text-gray-200">Sales</a>
+                <a href="{{ route('expenses.create') }}" class="text-white hover:text-gray-200">Expenses</a>
                 <a href="{{ route('report.index') }}" class="text-white hover:text-gray-200">Reports</a>
             </div>
         </div>

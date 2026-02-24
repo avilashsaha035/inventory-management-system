@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SaleController;
@@ -28,3 +29,6 @@ Route::resource('sales', SaleController::class);
 
 // Financial reports
 Route::get('/report', [ReportController::class, 'index'])->name('report.index');
+
+// Expenses
+Route::resource('expenses', ExpenseController::class);
