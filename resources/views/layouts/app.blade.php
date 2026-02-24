@@ -14,12 +14,11 @@
     <nav class="bg-blue-600 p-4 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <a href="{{ route('products.index') }}" class="text-white font-bold text-lg">
-                Inventory System
+                Inventory Management System
             </a>
             <div class="space-x-4">
                 <a href="{{ route('products.index') }}" class="text-white hover:text-gray-200">Products</a>
                 <a href="{{ route('sales.create') }}" class="text-white hover:text-gray-200">Sales</a>
-                <a href="#" class="text-white hover:text-gray-200">Expenses</a>
                 <a href="{{ route('report.index') }}" class="text-white hover:text-gray-200">Reports</a>
             </div>
         </div>

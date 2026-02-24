@@ -24,9 +24,7 @@ Route::get('/', function () {
 Route::resource('products', ProductController::class);
 
 // Sales route
-Route::get('/sales', [SaleController::class, 'index'])->name('sales.index');
-Route::get('/sales/create', [SaleController::class, 'create'])->name('sales.create');
-Route::post('/sales', [SaleController::class, 'store'])->name('sales.store');
+Route::resource('sales', SaleController::class);
 
 // Financial reports
 Route::get('/report', [ReportController::class, 'index'])->name('report.index');
