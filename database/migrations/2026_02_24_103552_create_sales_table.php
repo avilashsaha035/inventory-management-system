@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('product_id')->constrained();
+            $table->integer('quantity');
+            $table->decimal('discount', 10, 2)->default(0);
+            $table->decimal('vat', 10, 2)->default(0);
+            $table->decimal('total_amount', 10, 2);
+            $table->decimal('customer_payment', 10, 2);
+            $table->decimal('due_amount', 10, 2);
+            $table->date('sale_date');
             $table->timestamps();
         });
     }
